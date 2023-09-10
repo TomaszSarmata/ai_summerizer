@@ -64,6 +64,11 @@ const Demo = () => {
           </button>
         </form>
         {/* Browse URL History */}
+        <div className="flex flex-col gap-1 max-h-60 overflow-y-auto">
+          {allArticles.map((item, index) => (
+            <div key={`link-${index}`} onClick={() => setArticle(item)}></div>
+          ))}
+        </div>
       </div>
       {/* Display Results */}
     </section>
