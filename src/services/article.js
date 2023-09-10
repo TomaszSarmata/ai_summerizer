@@ -34,3 +34,5 @@ export const articleApi = createApi({
     }),
   }),
 });
+
+export const { useGetSummaryQuery } = articleApi;
